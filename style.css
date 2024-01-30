@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: regular;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+:root {
+    --green: #083600;
+    --orange: #761d00;
+    --grey: rgb(117, 117, 117);
+    --border-color: rgba(255, 255, 255, 0.118);
+}
+
+/* Header-1 */
+
+.header1 {
+    background-color: var(--green);
+    color: #fff;
+    font-size: 16px;
+    font-weight: regular;
+
+    img {
+        vertical-align: middle;
+        margin-right: 8px;
+    }
+
+    a {
+        color: #fff;
+        font-size: 16px;
+        font-weight: regular;
+    }
+}
+
+.address {
+    > div {
+        padding: 14px 25px;
+    }
+
+    > div:first-child {
+        padding-left: 0;
+        border-right: solid 2px var(--border-color);
+    }
+}
+
+.social {
+    a {
+        padding: 14px 12px;
+    }
+
+    a:last-child {
+        padding-right: 0;
+    }
+
+    a:not(:last-child) {
+        border-right: solid 2px var(--border-color);
+    }
+}
+
+/* Header-2 */
+
+.header2 {
+    background-color: yellow;
+
+    .logo {
+        padding-top: 22px;
+    }
+}
+
+.contact a {
+    display: inline-block;
+    padding: 14px 20px;
+
+    img {
+        margin-right: 13px;
+    }
+    
+    > span {
+        white-space: nowrap;
+        display: inline-block;
+
+        span:first-child {
+            font-size: 14px;
+            font-weight: bold;
+            color: var(--grey);
+        }
+
+        span:last-child {
+            font-size: 15px;
+            font-weight: bold;
+            color: var(--green);
+        }
+    }
+}
+
+.contact a:nth-child(2) {
+    padding-right: 0;
+}
+
+/* Nav bar */
+
+.navbar {
+    background-color: var(--orange);
+}
+
+.nav {
+    li {
+        float: left;
+    }
+
+    a {
+        display: inline-block;
+        color: #fff;
+        padding: 22px 30px;
+    }
+
+    a:first-child {
+        padding-left: 0;
+    }
+}
+
+.search {
+    
+    margin: 10px 0;
+    background-color: #996445;
+    padding: 0 14px;
+    border-radius: 3px;
+
+    input {
+        height: 100%;
+        width: 285px;
+        padding-right: 14px;
+        background: transparent;
+        color: #fff;
+        font-size: 16px;
+        border: none;
+        outline: none;
+    }::placeholder {
+        color: #fff;
+        font-size: 16px;
+    }
+
+    img {
+        vertical-align: middle;
+    }
+}
