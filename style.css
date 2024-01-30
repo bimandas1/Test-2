@@ -32,8 +32,8 @@ a {
 }
 
 :root {
-    --green: #083600;
-    --orange: #761d00;
+    --green: #042711;
+    --orange: #a14000;
     --grey: rgb(117, 117, 117);
     --border-color: rgba(255, 255, 255, 0.118);
 }
@@ -85,16 +85,12 @@ a {
 
 /* Header-2 */
 
-.header2 {
-    background-color: yellow;
+.logo {
+    /* padding-top: 22px; */
 
-    .logo {
-        /* padding-top: 22px; */
-
-        img {
-            height: 100%;
-            width: 100%;
-        }
+    img {
+        height: 100%;
+        width: 100%;
     }
 }
 
@@ -182,7 +178,7 @@ a {
 /* Banner */
 
 .banner {
-    background: url("./assests/Images/banner.jpg") no-repeat center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.804), rgba(0, 0, 0, 0.552)), url("./assests/Images/banner.jpg") no-repeat center/cover;
     height: 570px;
 }
 
@@ -236,4 +232,37 @@ h1 {
             background-color: #fff;
         }
     }
+}
+
+/* Features */
+
+.features {
+    background-color: var(--green);
+    padding-top: 20px;
+}
+
+.features-wrapper a {
+    width: 16.67%;
+    padding: 30px 0;
+    text-align: center;
+
+    img {
+        vertical-align: middle;
+        margin-right: 12px;
+    }
+
+    span {
+        text-align: left;
+        display: inline-block;
+        vertical-align: middle;
+        font-weight: bold;
+        color: #fff;
+    }
+}
+a:hover span {
+    color: rgb(0, 238, 222);
+}
+
+.features-wrapper a:not(:first-child) {
+    border-left: solid 1px #fff;
 }
