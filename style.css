@@ -191,7 +191,7 @@ body {
 .one {
     z-index: 2;
     background-color: var(--dark-green);
-    border-radius: 0px 0px 0px 10px !important;
+    border-radius: 0px 0px 0px 15px !important;
 }
 
 .box4-help {
@@ -222,7 +222,7 @@ body {
 .one2 {
     z-index: 5;
     background-color: var(--dark-green);
-    border-radius: 10px 0px 0px 0px !important;
+    border-radius: 15px 0px 0px 0px !important;
 }
 
 .box6-help {
